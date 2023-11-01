@@ -1,0 +1,15 @@
+* C:\users\mateus\Área de Trabalho\Projeto-Filtros-Ativos\simulation\MFB-HighPass.asc
+C1 N001 IN 68n
+C4 N001 OUT 33n
+C3 N001 N002 68n
+R2 N001 P001 68
+R5 OUT N002 1.6k
+R21 P001 0 56
+V1 IN 0 AC 1
+V2 +VCC 0 12
+V3 0 -VCC 12
+XU1 0 N002 +VCC -VCC OUT LM741
+.ac dec 10 1 1Meg
+.lib LM741.lib
+.backanno
+.end
